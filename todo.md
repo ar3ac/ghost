@@ -54,12 +54,12 @@ Criterio "done":
 
 "PushEvent" non è molto bello da leggere. Dobbiamo tradurre i nomi tecnici di GitHub in frasi leggibili per un essere umano.
 
-- [ ] Crea una logica (es. `if/elif` o `match/case`) per tradurre i tipi di evento più comuni:
+- [x] Crea una logica (es. `if/elif` o `match/case`) per tradurre i tipi di evento più comuni:
   - Se è `PushEvent` -> "Pushed X commits to <repo>"
   - Se è `IssuesEvent` -> "Opened a new issue in <repo>"
   - Se è `WatchEvent` -> "Starred <repo>"
   - Se è `CreateEvent` -> "Created <repo>"
-- [ ] Stampa l'output finale pulito, riga per riga, esattamente come richiesto da roadmap.sh.
+- [x] Stampa l'output finale pulito, riga per riga, esattamente come richiesto da roadmap.sh.
 
 Criterio "done":
 
