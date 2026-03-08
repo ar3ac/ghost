@@ -1,6 +1,7 @@
 # Ghost: GitHub Observer of Silly Things
 
 A simple command-line interface (CLI) tool to fetch and display the recent activity of a GitHub user, also known as the "GitHub User Activity CLI".
+
 This project was built following the specifications from roadmap.sh.
 
 ## Features
@@ -22,7 +23,7 @@ Run the script passing the GitHub username as an argument:
 python main.py <username>
 ```
 
-### Esempio
+### Example
 
 ```bash
 python main.py torvalds
