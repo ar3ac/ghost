@@ -1,5 +1,6 @@
 import sys
 import urllib.request
+import json
 
 
 def fetch_github_events(username):
@@ -16,8 +17,10 @@ def main():
     username = sys.argv[1]
     print(f"Searching activities for user: {username}")
 
-    events = fetch_github_events(username)
-    print(f"Events for {username}:\n{events}")
+    events_str = fetch_github_events(username)
+    events_list = json.loads(events_str)
+    for event in events_list:
+        print(f"Event Type: {event['type']}, Repo: {event['repo']['name']}")
 
 
 if __name__ == "__main__":

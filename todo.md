@@ -38,11 +38,11 @@ Criterio "done":
 
 GitHub ci manda un mucchio di dati, noi dobbiamo estrarre solo quelli utili usando il modulo standard `json`.
 
-- [ ] Importa il modulo standard `json`.
-- [ ] Usa `json.loads()` per trasformare il testo grezzo scaricato prima in una vera lista di dizionari Python.
-- [ ] Fai un ciclo `for` su questa lista.
-- [ ] Per ogni evento (elemento della lista), estrai il tipo di evento (es. la chiave `type`) e il nome del repository (es. dentro la chiave `repo` -> `name`).
-- [ ] Stampa questi due dati a schermo in modo grezzo.
+- [x] Importa il modulo standard `json`.
+- [x] Usa `json.loads()` per trasformare il testo grezzo scaricato prima in una vera lista di dizionari Python.
+- [x] Fai un ciclo `for` su questa lista.
+- [x] Per ogni evento (elemento della lista), estrai il tipo di evento (es. la chiave `type`) e il nome del repository (es. dentro la chiave `repo` -> `name`).
+- [x] Stampa questi due dati a schermo in modo grezzo.
 
 Criterio "done":
 
