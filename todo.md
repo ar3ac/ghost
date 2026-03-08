@@ -22,11 +22,11 @@ Criterio "done":
 
 L'obiettivo qui è fare la chiamata API al server di GitHub (senza usare la libreria esterna `requests`).
 
-- [ ] Importa il modulo standard `urllib.request`.
-- [ ] Costruisci l'URL dinamico: `https://api.github.com/users/<username>/events`.
-- [ ] Crea una funzione che fa la richiesta HTTP a quell'URL usando `urllib.request.urlopen()`.
-- [ ] Leggi la risposta del server e decodificala (di solito arriva in formato _byte_, devi trasformarla in stringa/testo).
-- [ ] Per ora, stampa l'intero blocco di testo grezzo nel terminale per assicurarti che i dati arrivino.
+- [x] Importa il modulo standard `urllib.request`.
+- [x] Costruisci l'URL dinamico: `https://api.github.com/users/<username>/events`.
+- [x] Crea una funzione che fa la richiesta HTTP a quell'URL usando `urllib.request.urlopen()`.
+- [x] Leggi la risposta del server e decodificala (di solito arriva in formato _byte_, devi trasformarla in stringa/testo).
+- [x] Per ora, stampa l'intero blocco di testo grezzo nel terminale per assicurarti che i dati arrivino.
 
 Criterio "done":
 

@@ -1,4 +1,11 @@
 import sys
+import urllib.request
+
+
+def fetch_github_events(username):
+    url = f"https://api.github.com/users/{username}/events"
+    with urllib.request.urlopen(url) as response:
+        return response.read().decode("utf-8")
 
 
 def main():
@@ -8,6 +15,9 @@ def main():
 
     username = sys.argv[1]
     print(f"Searching activities for user: {username}")
+
+    events = fetch_github_events(username)
+    print(f"Events for {username}:\n{events}")
 
 
 if __name__ == "__main__":
