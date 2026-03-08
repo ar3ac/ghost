@@ -71,10 +71,10 @@ Criterio "done":
 
 Cosa succede se internet non va o l'utente non esiste?
 
-- [ ] Aggiungi un blocco `try/except` intorno alla tua chiamata di rete (`urlopen`).
-- [ ] Gestisci l'Errore 404 (Not Found): stampa "Errore: L'utente specificato non esiste su GitHub".
-- [ ] Gestisci l'Errore 403 o 429 (Rate Limit): GitHub limita le chiamate anonime. Se superi il limite, stampa "Errore: Limite di chiamate API raggiunto".
-- [ ] Gestisci errori generici di rete (es. Wi-Fi spento): stampa "Errore di connessione".
+- [x] Aggiungi un blocco `try/except` intorno alla tua chiamata di rete (`urlopen`).
+- [x] Gestisci l'Errore 404 (Not Found): stampa "Errore: L'utente specificato non esiste su GitHub".
+- [x] Gestisci l'Errore 403 o 429 (Rate Limit): GitHub limita le chiamate anonime. Se superi il limite, stampa "Errore: Limite di chiamate API raggiunto".
+- [x] Gestisci errori generici di rete (es. Wi-Fi spento): stampa "Errore di connessione".
 
 Criterio "done":
 

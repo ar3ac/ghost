@@ -5,8 +5,27 @@ import json
 
 def fetch_github_events(username):
     url = f"https://api.github.com/users/{username}/events"
-    with urllib.request.urlopen(url) as response:
-        return response.read().decode("utf-8")
+    try:
+        with urllib.request.urlopen(url) as response:
+            return response.read().decode("utf-8")
+    # except 404 with a custom message
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            print(f"User {username} not found.")
+            sys.exit(1)
+        elif e.code == 403 or e.code == 429:
+            print(f"Rate limit exceeded. Please try again later.")
+            sys.exit(1)
+        else:
+            print(f"Error fetching GitHub events for user {username}: {e}")
+            sys.exit(1)
+    # generic lan error handling
+    except urllib.error.URLError as e:
+        print(f"Error connecting to GitHub API: {e}")
+        sys.exit(1)
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        sys.exit(1)
 
 
 def main():
