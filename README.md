@@ -1,22 +1,22 @@
-# GitHub User Activity CLI
+# Ghost: GitHub Observer of Silly Things
 
-Un semplice tool da riga di comando (CLI) per visualizzare le attività recenti di un utente GitHub.
-Progetto realizzato seguendo le specifiche di [roadmap.sh](https://roadmap.sh/projects/github-user-activity).
+A simple command-line interface (CLI) tool to fetch and display the recent activity of a GitHub user, also known as the "GitHub User Activity CLI".
+This project was built following the specifications from roadmap.sh.
 
-## Caratteristiche
+## Features
 
-- 🐍 Scritto interamente in Python.
-- 📦 **Zero dipendenze**: utilizza solo le librerie standard (`urllib`, `json`, `sys`).
-- 🛡️ Gestione robusta degli errori (Utente non trovato, Rate Limit, Errori di connessione).
-- 🎨 Output formattato per una facile lettura.
+- 🐍 Written entirely in Python.
+- 📦 **Zero dependencies**: uses only standard libraries (`urllib`, `json`, `sys`).
+- 🛡️ Robust error handling (User not found, Rate Limit, Connection errors).
+- 🎨 Formatted output for easy reading.
 
-## Requisiti
+## Requirements
 
-- Python 3.x installato.
+- Python 3.x installed.
 
-## Utilizzo
+## Usage
 
-Esegui lo script passando l'username di GitHub come argomento:
+Run the script passing the GitHub username as an argument:
 
 ```bash
 python main.py <username>
